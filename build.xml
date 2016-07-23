@@ -32,7 +32,6 @@
 	
     <!-- Test out deploy verbs for package 'mypkg' -->
     <target name="RetrieveFromLNEDev1">
-      <mkdir dir="LNEDev1RetrieveTarget"/>
       <!-- Retrieve the contents into another directory -->
       <sf:retrieve username="${sf.lnedev1username}" password="${sf.lnedev1password}" sessionId="${sf.lnedev1sessionId}" serverurl="${sf.lnedev1serverurl}" maxPoll="${sf.lnedev1maxPoll}" retrieveTarget="src" unpackaged="src/package.xml"/>
     </target>
